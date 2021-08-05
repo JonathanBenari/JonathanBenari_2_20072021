@@ -1,0 +1,28 @@
+@font-face {
+    
+}
+
+body {
+    margin: auto;
+}
+* {
+    box-sizing: border-box;
+}
+.ul-container-navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding: 2.5rem;
+
+}
+.li-container {
+    padding: 10px;
+    margin-left: 2rem;
+}
+
+.titles-section {
+    font-size: 1.2rem;
+    font-weight: 800;
+    line-height: 2rem;
+}
+
