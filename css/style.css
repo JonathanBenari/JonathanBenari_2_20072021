@@ -16,13 +16,11 @@ body {
     
 }
 .logo {
-    
     position: relative;
     bottom: 5px; 
 }
 
 .ul-container-navbar {
-    display: flex;
     margin-bottom: 2rem;
 
 }
@@ -385,4 +383,24 @@ input::placeholder {
 }
 .footer-li {
     line-height: 2rem;
+}
+
+
+@media (max-width: 500px) {
+
+    .ul-container-navbar {
+    flex-direction: column;
+    text-align: center;
+    }
+
+
+    .logo {
+        position: static;
+       
+    }
+}
+
+@media (min-width: 768px) {
+
+   
 }
