@@ -49,7 +49,7 @@ body {
     display: flex;
     align-items: stretch;
     margin-top: 15px;
-    margin-bottom: 15px;
+    margin-bottom: 25px;
 }
 
 .search-field {
@@ -85,12 +85,11 @@ input::placeholder {
 }
 .filter-title {
     font-weight: 700;
+    font-size: 1.1em;
     margin-top: 15px;
     margin-right: 30px;
 }
 .btn-filter {    
-    display: flex;
-    align-self: center;
     border: 2px solid #cecece;
     border-radius: 40px 60px 60px 15px;
     background-color: white;
@@ -107,17 +106,18 @@ input::placeholder {
 
 }
 .btn-title {
-    font-weight: 600;
+    font-weight: 700;
+    font-size: 1.1em;
     align-self: center;
 }
 .main-title {
     font-size: 1.2em;
     font-weight: 800;
-    line-height: 1rem;
+    margin-bottom: 1rem;
    
 }
 .par-description {
-    margin-top: 10px;
+    margin-bottom: 20px;
 }
 
 .fa-map-marker-alt  {
@@ -198,29 +198,29 @@ input::placeholder {
     flex-direction: column;
     margin-right: 10px;
     margin-left: 10px;
-    margin-bottom: 50px;
-    border-radius: 10px;
+    margin-bottom: 30px;
+    border-radius: 17px;
     background: white;
     border: 5px solid white;
     box-shadow:  0px 0px 10px rgb(197 196 196);
 }
 .card-container:hover {
-    -webkit-transform:scale(1.25); 
-    -moz-animation-delay:scale(1.25);
-    -webkit-transition-duration: 300ms ; 
+    -webkit-transform:scale(.85); 
+    -moz-animation-delay:scale(.85);
+    -webkit-transition-duration: 600ms ; 
 }
 
 .picture-content {
     object-fit: cover;
     background-size: 150px;
-    width: 200px;
-    height: 150px;
-    border-radius: 10px 10px 0px 0px;
+    width: 250px;
+    height: 125px;
+    border-radius: 13px 13px 0px 0px;
 }
 .content-description {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-evenly;
     margin-left: 5px;
     padding-top: 10px;
 }
@@ -260,7 +260,7 @@ input::placeholder {
     justify-content: space-around;
     flex: 1;
     background-color: #F2F2F2;
-    border-radius: 15px;
+    border-radius: 17px;
     padding: 20px
 }
 .title-icon {
@@ -274,6 +274,7 @@ input::placeholder {
 }
 .fa-chart-line {
     color: black;
+    font-size: x-large;
 }
 .card-mostpopular {
     display: flex;
@@ -284,9 +285,9 @@ input::placeholder {
     margin-bottom: 45px;
 }
 .card-mostpopular:hover {
-    -webkit-transform:scale(1.10); 
-    -moz-animation-delay:scale(1.10);
-    -webkit-transition-duration: 300ms ; 
+    -webkit-transform:scale(.85); 
+    -moz-animation-delay:scale(.85);
+    -webkit-transition-duration: 600ms ; 
 }
 
 .img-aside { 
@@ -294,7 +295,7 @@ input::placeholder {
     background-size: contain;
     width: 150px;
     height: 150px;
-    border-radius: 10px 0px 0px 10px;
+    border-radius: 13px 0px 0px 13px;
 }
 .aside-card-content {
     display: flex;
@@ -304,23 +305,24 @@ input::placeholder {
     padding: 1rem;
 }
 .aside-stars-container {
-    position: relative;
-    margin-top: 45px;
+    margin-top: 44px;
 }
 
 .grid-container {
     display: grid;
+    height: 500px;
+    column-gap: 2rem;
+    row-gap: 2rem;
 }
 .article-activities {
     display: flex;
     flex-direction: column;
     background-color: white;
-    border-radius: 10px;
-    box-shadow: 0px 0px 4px GREY;
+    box-shadow: 1px 1px 7px #cecece;
     margin-bottom: 1rem;
     margin-left: 1rem;
     overflow: hidden;
-    border-radius: 10px 10px 10px 10px;
+    border-radius: 20px 20px 20px 20px;
     
 }
 .gridItem1 {
@@ -332,7 +334,7 @@ input::placeholder {
     grid-column-end: 2;
 }
 .gridItem3 {
-    grid-row: span 2;
+    grid-row: 2;
     grid-column-end: 2;
 }   
 
@@ -361,6 +363,7 @@ input::placeholder {
 }
 .activity-title {
     font-weight: 700;
+    margin-top: 10px;
 
 }
 
