@@ -440,6 +440,7 @@ input::placeholder {
 }
 
 
+/* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
 
     .ul-container-navbar {
@@ -550,7 +551,7 @@ input::placeholder {
     }
 
 }
-
+/* Medium devices (tablets, 768px and up)*/
 @media (min-width: 768px) {
 
     .search-bar {
@@ -648,5 +649,14 @@ input::placeholder {
         text-align: center;
         width: auto;
     }
+    
+}
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
     
 }
