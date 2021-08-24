@@ -13,36 +13,35 @@ body {
 .logo-li {
     display: flex;
     justify-content: space-between;
+    margin-left: 3rem;
+    margin-right: 3rem;
     
 }
 .logo {
-    
-    position: relative;
-    bottom: 5px; 
+    padding-top: 20px; 
 }
 
 .ul-container-navbar {
     display: flex;
-    margin-bottom: 2rem;
 
 }
 
 .li-container { 
-    padding: 10px;
-    margin-left: 2rem;
+    
+    padding-top: 40px;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
 }
 
 .li-container-register {
     color: #0065FC;
     margin-left: 2rem;
-    padding: 10px; 
+    padding-top: 40px; 
 }
 .li-container:hover {
     color: #0065FC;
     border-color: #0065FC;
     border-top: 2px solid;
-    padding-bottom: 2px;
-    
 }
 
 .search-bar {
@@ -241,7 +240,7 @@ input::placeholder {
 .far {
     color: #cecece;
 }
-.title-section {
+#title-section {
     font-size: 1.2em;
     font-weight: 800;
     line-height: 1rem;
