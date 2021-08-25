@@ -26,8 +26,7 @@ body {
 
 }
 
-.li-container { 
-    
+.li-container {     
     padding-top: 40px;
     padding-left: 1.5rem;
     padding-right: 1.5rem;
@@ -391,15 +390,14 @@ input::placeholder {
 
 
 /* Small devices (landscape phones, 576px and up)*/ 
-@media all and  (min-width: 576px) {
+@media all and (min-device-width: 576px) {
 
 
-    
     .logo-li {
         display: block;
     }
     .ul-container-navbar {
-        
+    display: flex
         
     }
 
@@ -407,7 +405,7 @@ input::placeholder {
         position: relative;
     }
     .li-container { 
-    
+        display: flex;
         padding-bottom: 5px;
     }
     .li-container:hover {
@@ -426,7 +424,6 @@ input::placeholder {
     .par-description {
         text-transform: capitalize;
         text-overflow: ellipsis;
-        text-decoration: aqua;
         text-align: center;
     }
 
@@ -442,7 +439,9 @@ input::placeholder {
         align-items: baseline;
     }
 
-    .btn-filter {}
+    .btn-filter {
+
+    }
 
     .article-aside-container {
         justify-content: center;
@@ -517,7 +516,7 @@ input::placeholder {
     }
 
 }
-/* Medium devices (tablets, 768px and up)
+/* Medium devices (tablets, 768px and up)*/
 @media (min-width: 768px) {
 
     .search-bar {
@@ -617,16 +616,15 @@ input::placeholder {
     }
     
 }
-/* Large devices (desktops, 992px and up) 
+/* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
 
 }
 
-/* Extra large devices (large desktops, 1200px and up)
+/* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
     
 }
  @media (min-width: 2160px) {
 
- }
-*/
+}
