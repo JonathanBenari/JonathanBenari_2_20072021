@@ -13,8 +13,8 @@ body {
 .logo-li {
     display: flex;
     justify-content: space-between;
-    margin-left: 3rem;
-    margin-right: 3rem;
+    margin-left: 70px;
+    margin-right: 70px;
     
 }
 .logo {
@@ -36,7 +36,8 @@ body {
 .li-container-register {
     color: #0065FC;
     margin-left: 2rem;
-    padding-top: 40px; 
+    padding-top: 40px;
+    font-weight: 600;
 }
 .li-container:hover {
     color: #0065FC;
@@ -388,3 +389,245 @@ input::placeholder {
 .footer-li {
     line-height: 2rem;
 }
+
+
+/* Small devices (landscape phones, 576px and up)*/ 
+@media all and  (min-width: 576px) {
+
+
+    
+    .logo-li {
+        display: block;
+    }
+    .ul-container-navbar {
+        
+        
+    }
+
+    .logo {
+        position: relative;
+    }
+    .li-container { 
+    
+        padding-bottom: 5px;
+    }
+    .li-container:hover {
+        color: #0065FC;
+        border-color: #0065FC;
+        border-bottom: 3px solid;
+    }
+
+    .li-container-register {
+        display: inline-block;
+    }
+
+    .main-title { 
+        margin-bottom: 2rem;    
+    }
+    .par-description {
+        text-transform: capitalize;
+        text-overflow: ellipsis;
+        text-decoration: aqua;
+        text-align: center;
+    }
+
+    .search-bar {
+        flex-wrap: wrap;
+    }
+    
+    .filters-bar {
+        display: flex;
+    }
+
+    .filter-container {
+        align-items: baseline;
+    }
+
+    .btn-filter {}
+
+    .article-aside-container {
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .hebergements-container {
+        flex-direction: column;
+        margin-bottom: 2rem;
+        width: 100%;
+    }
+
+    #hebergements {
+        font-size: 1.3em;
+        text-align: center;
+        width: auto;
+    }
+
+    .picture-content {
+        width: auto;
+    }
+
+    .aside-container {
+        width: 100%;
+    }
+
+    .title-aside {
+        font-size: 1.3em;
+        width: auto;
+    }
+
+    .card-mostpopular {
+        display: block;
+        width: auto;
+    }
+
+    .img-aside {
+        width: 100%;
+    }
+
+    .grid-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer-container {
+        display: block;
+        text-align: center;
+        width: auto;
+    }
+
+    .search-bar {
+        display: flex;
+        width: auto;
+        justify-content: center;
+    }
+
+    .search-field {
+        border: solid 1px #cecece;
+        width: 150px;
+    }
+
+    input::placeholder {
+        font-size: 1em;
+    }
+
+    .search-button {
+        font-size: 0.8em;
+        width: 30%;
+    }
+
+}
+/* Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+
+    .search-bar {
+        display: flex;
+        width: auto;
+        justify-content: center;
+        margin: 2rem;
+    }
+
+    .search-field {
+        border: solid 1px #cecece;
+        width: 150px;
+    }
+
+    input::placeholder {
+        font-size: 1em;
+    }
+
+    .search-button {
+        font-size: 0.8em;
+        width: 30%;
+    }
+
+    .filters-bar {
+        display: flex;
+
+       
+    }
+    .filter-title {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 1.5rem;
+    }
+    .article-aside-container {
+        justify-content: center;
+        display: flex;
+        flex-direction: row;
+
+    }
+
+    .hebergements-container {
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 1rem;
+        width: 100%;
+    }
+
+    #hebergements {
+        font-size: 1.3em;
+        text-align: center;
+        width: auto;
+    }
+    .card-container {
+        width: 43%;
+    }
+
+    .picture-content {
+        width: auto;
+    }
+
+    .aside-container {
+        width: 100%;
+        height: fit-content; 
+        
+
+    }
+
+    .title-aside {
+        font-size: 1.3em;
+        width: auto;
+        margin-bottom: 1.5rem;
+    }
+
+    .card-mostpopular {
+        display: block;
+        width: auto;
+    }
+
+    .img-aside {
+        width: 100%;
+    }
+
+    .grid-container {
+        display: flex;
+        flex-direction: column;
+    
+    }
+    .article-activities {
+        width: 30%;
+        height: 30%;
+    }
+
+    .footer-container {
+        display: block;
+        text-align: center;
+        width: auto;
+    }
+    
+}
+/* Large devices (desktops, 992px and up) 
+@media (min-width: 992px) {
+
+}
+
+/* Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+    
+}
+ @media (min-width: 2160px) {
+
+ }
+*/
