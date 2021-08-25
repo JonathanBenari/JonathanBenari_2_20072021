@@ -409,9 +409,9 @@ input::placeholder {
         position: relative;
     }
     .li-container { 
-        display: flex;
-        padding-bottom: 5px;
-        width: 100% auto;
+        
+        width: 50%;
+        padding: 0;
         border-bottom: #cecece 2px;
     }
     .li-container:hover {
