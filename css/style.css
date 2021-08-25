@@ -20,6 +20,9 @@ body {
 .logo {
     padding-top: 20px; 
 }
+.menu {
+    display: flex;
+}
 
 .ul-container-navbar {
     display: flex;
@@ -27,15 +30,16 @@ body {
 }
 
 .li-container { 
-    
+    text-align: center;
     padding-top: 40px;
     padding-left: 1.5rem;
     padding-right: 1.5rem;
 }
 
-.li-container-register {
+.container-register {
     color: #0065FC;
     margin-left: 2rem;
+    margin-right: 2rem;
     padding-top: 40px;
     font-weight: 600;
 }
