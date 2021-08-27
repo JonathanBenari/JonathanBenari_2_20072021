@@ -45,8 +45,7 @@ body {
 }
 .li-container:hover {
     color: #0065FC;
-    border-color: #0065FC;
-    border-top: 2px solid;
+    border-top: 2px solid #0065FC;
 }
 
 .search-bar {
@@ -67,6 +66,10 @@ input::placeholder {
     font-size: 1.2em;
     padding-right: 20px;
     padding-left: 10px;
+  }
+
+  .fa-search {
+      content: none;
   }
 .search-button {
     font-family: 'Raleway';
@@ -394,39 +397,46 @@ input::placeholder {
     line-height: 2rem;
 }
 
-
-/* Small devices (landscape phones, 576px and up)*/ 
-@media all and (min-device-width: 576px) {
+/* Small devices (landscape phones, 576px and up)*/
+@media all and (min-width: 576px) {
 
     .body-content {
         padding: 0;
     }
+
+    .logo {
+        margin-left: 70px;
+    }
     .logo-li {
         display: block;
+        margin: 0;
     }
     .ul-container-navbar {
-    display: flex
-        
+    display: flex;
+    width: 100%;
+    padding-bottom: 1rem;
+    margin-top: 2rem;
     }
 
     .logo {
         position: relative;
     }
     .li-container { 
-        
-        width: 50%;
+        width: 100%;
         padding: 0;
-        border-bottom: #cecece 2px;
+        border-bottom: 2px solid #F2F2F2;
+        padding-bottom: 8px;
     }
     .li-container:hover {
-        color: #0065FC;
-        border-color: #0065FC;
-        border-bottom: 3px solid;
+        border-top: none;
+        border-bottom: #0065FC 2px solid;
     }
 
     .container-register {
-        display: inline-block;
-        margin-bottom: 10px;
+        position: absolute;
+        margin-right: 70px;
+        top: 0;
+        right: 0px;
     }
     .main-title { 
           
@@ -561,7 +571,7 @@ input::placeholder {
 
 }
 /* Medium devices (tablets, 768px and up)*/
-@media (min-width: 768px) {
+@media all and (min-width: 768px) {
 
     .search-bar {
         display: flex;
@@ -579,15 +589,19 @@ input::placeholder {
         font-size: 1em;
     }
 
+
     .search-button {
         font-size: 0.8em;
         width: 30%;
     }
 
     .filters-bar {
-        display: flex;
-
-       
+        display: flex;       
+    }
+    .filter-container {
+        flex-wrap: nowrap;
+        margin-bottom: 1rem;
+        width: 400px;
     }
     .filter-title {
         width: 100%;
@@ -610,8 +624,9 @@ input::placeholder {
 
     #hebergements {
         font-size: 1.3em;
-        text-align: center;
-        width: auto;
+        padding: 0px;
+        margin-left: 3rem;
+        margin-top: 2rem;
     }
     .card-container {
         width: 43%;
@@ -660,14 +675,11 @@ input::placeholder {
     
 }
 /* Large devices (desktops, 992px and up) */
-@media (min-width: 992px) {
+@media all and (min-width: 992px) {
 
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) {
+@media all and (min-width: 1200px) {
     
-}
- @media (min-width: 2160px) {
-
 }
