@@ -57,7 +57,7 @@ body {
 
 .search-field {
     border: solid 1px #cecece;
-    width: 15%;
+    width: 200px;
 }
 input::placeholder {
     font-family: 'Raleway';
@@ -68,9 +68,10 @@ input::placeholder {
     padding-left: 10px;
   }
 
-  .fa-search {
-      content: none;
-  }
+.search-small{
+    display: none;
+}
+
 .search-button {
     font-family: 'Raleway';
     font-size: 1em;
@@ -80,20 +81,22 @@ input::placeholder {
     border: hidden;
     background-color: #0065FC;
     border-radius: 0px 10px 10px 0px;
-    width: 8%;
+    width: 150px;
 }
 .filters-bar {
     display: flex;
+    flex-wrap: wrap;
 }
 .filter-container {
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 1rem;
+    margin-top: 1rem;
 }
 .filter-title {
     font-weight: 700;
     font-size: 1.1em;
-    margin-top: 15px;
+    align-self: center;
     margin-right: 30px;
 }
 .btn-filter {    
@@ -127,9 +130,13 @@ input::placeholder {
     margin-bottom: 20px;
 }
 
+.fa-map-marker-alt::before {
+    color: black;
+}
+
 .fa-map-marker-alt  {
     background: #F2F2F2;
-    border-radius: 10px 0px 0px 10px;
+    border-radius: 12px 0px 0px 12px;
     padding: 12px;
 }
 .fa-money-bill-wave {
@@ -439,46 +446,66 @@ input::placeholder {
         right: 0px;
     }
     .main-title { 
-          
+        margin-left: 1rem;
+        margin-top: 1rem;
     }
 
     .par-description {
-        text-transform: capitalize;
-        text-overflow: ellipsis;
-        text-align: center;
+        margin-left: 1rem;
     }
 
     .search-bar {
         display: flex;
         width: auto;
-        justify-content: center;
+        margin-left: 1rem;
     }
 
     input::placeholder {
         font-size: 1em;
     }
+    .search-small {
+        display: block;
+        padding: 12px;
+        background-color: #0065FC;
+        border-radius: 12px 12px 12px 12px;
+        margin-left: -10px;
+        cursor: pointer;
+      }
+    
+    .fa-search {
+        color: white;
+      }
 
     .search-field {
-        border: solid 1px #cecece;
-        width: 150px;
+        border: solid 0.5px #cecece;
+        width: auto;
     }
 
-    .search-button {
-        font-size: 0.8em;
-        width: 30%;
+    .search-button{
+        display: none;
     }
     .filters-bar {
-        display: flex;
+        margin-left: 1rem;
+        
     }
-
+    .filter-title {
+        font-size: 1em;
+        margin: 0;
+        margin-right: 10px;
+    }
     .filter-container {
-        align-items: baseline;
+        flex-wrap: nowrap;
+        margin-bottom: 20px;
     }
 
     .btn-filter {
-
+        display: flex;
+        border: 1px solid #cecece;
+        margin-right: 11px;
     }
-
+    .btn-title {
+        font-size: 0.9em;
+    }
     .info-logements {
         margin-left: 1.5rem;
     }
@@ -529,7 +556,7 @@ input::placeholder {
 
     .title-aside {
         margin-bottom: 1rem;
-        font-size: 1.5em;
+        font-size: 1.2em;
         
     }
 
@@ -573,6 +600,45 @@ input::placeholder {
 /* Medium devices (tablets, 768px and up)*/
 @media all and (min-width: 768px) {
 
+    .body-content {
+        padding: 0;
+    }
+
+    .logo {
+        margin-left: 70px;
+    }
+    .logo-li {
+        display: block;
+        margin: 0;
+    }
+    .ul-container-navbar {
+    display: flex;
+    width: 100%;
+    padding-bottom: 1rem;
+    margin-top: 2rem;
+    }
+
+    .logo {
+        position: relative;
+    }
+    .li-container { 
+        width: 100%;
+        padding: 0;
+        border-bottom: 2px solid #F2F2F2;
+        padding-bottom: 8px;
+    }
+    .li-container:hover {
+        border-top: none;
+        border-bottom: #0065FC 2px solid;
+    }
+
+    .container-register {
+        position: absolute;
+        margin-right: 70px;
+        top: 0;
+        right: 0px;
+    }
+
     .search-bar {
         display: flex;
         width: auto;
@@ -588,30 +654,43 @@ input::placeholder {
     input::placeholder {
         font-size: 1em;
     }
-
+    .search-small {
+        padding: 12px;
+        background-color: #0065FC;
+        border-radius: 12px 12px 12px 12px;
+        margin-left: -10px;
+        cursor: pointer;
+      }
+    
+    .fa-search::before {
+        color: white;
+      }
 
     .search-button {
-        font-size: 0.8em;
-        width: 30%;
+        display: none;
+    
     }
 
     .filters-bar {
-        display: flex;       
+        display: flex;
+        justify-content: space-around;
+        margin: 0;
+    }   
     }
     .filter-container {
         flex-wrap: nowrap;
         margin-bottom: 1rem;
-        width: 400px;
     }
     .filter-title {
         width: 100%;
         text-align: center;
         margin-bottom: 1.5rem;
+        font-size: 1em;
     }
     .article-aside-container {
         justify-content: center;
         display: flex;
-        flex-direction: row;
+        flex-direction: column-reverse;
 
     }
 
@@ -623,10 +702,9 @@ input::placeholder {
     }
 
     #hebergements {
-        font-size: 1.3em;
-        padding: 0px;
-        margin-left: 3rem;
-        margin-top: 2rem;
+        font-size: 1.4em;
+        width: 100%;
+        margin-bottom: 1rem;
     }
     .card-container {
         width: 43%;
@@ -636,17 +714,19 @@ input::placeholder {
         width: auto;
     }
 
+    .more-title {
+        padding: 0;
+        margin: 0;
+        margin-top: 1rem;
+    }
     .aside-container {
-        width: 100%;
-        height: fit-content; 
-        
-
+         
     }
 
     .title-aside {
-        font-size: 1.3em;
         width: auto;
         margin-bottom: 1.5rem;
+        font-size: 1.4em;
     }
 
     .card-mostpopular {
@@ -657,6 +737,10 @@ input::placeholder {
     .img-aside {
         width: 100%;
     }
+    #title-section {
+        font-size: 1.4em;
+        margin-top: 20px;
+    }
 
     .grid-container {
         display: flex;
@@ -664,22 +748,19 @@ input::placeholder {
     
     }
     .article-activities {
-        width: 30%;
-        height: 30%;
+        
     }
 
     .footer-container {
         display: block;
         width: auto;
     }
-    
-}
+
 /* Large devices (desktops, 992px and up) */
 @media all and (min-width: 992px) {
 
 }
 
-/* Extra large devices (large desktops, 1200px and up) */
-@media all and (min-width: 1200px) {
+
     
-}
+
