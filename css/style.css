@@ -99,15 +99,17 @@ input::placeholder {
     align-self: center;
     margin-right: 30px;
 }
-.btn-filter {    
+.btn-filter {
+    display: flex;
+    align-items: center;
     border: 2px solid #cecece;
     border-radius: 40px 60px 60px 15px;
     background-color: white;
     margin-right: 35px;
-    padding: 0px 15px 0px 10px;
+    padding: 0px 0px 0px 0px;
     cursor: pointer;
     height: 40px;
-    padding-left: 35px;
+    margin-top: 10px;
 }
 
 .btn-filter:hover {
@@ -115,10 +117,20 @@ input::placeholder {
    background-color: #DEEBFF
 
 }
+
+.btn_icon {
+    color: #0065FC;
+    background: #DEEBFF;
+    padding: 14px;
+    border-radius: 30px;
+    margin-left: -12px;
+    margin-right: 14px;
+}
 .btn-title {
     font-weight: 700;
     font-size: 1.1em;
     align-self: center;
+    margin-right: 14px;
 }
 .main-title {
     font-size: 1.2em;
@@ -139,38 +151,7 @@ input::placeholder {
     border-radius: 12px 0px 0px 12px;
     padding: 14px ;
 }
-.fa-money-bill-wave {
-    color: #0065FC;
-    background: #DEEBFF;
-    margin-right: -30px;
-    padding: 11px;
-    border-radius: 30px;
-    position: relative;
-}
-.fa-child {
-    color: #0065FC;
-    background: #DEEBFF;
-    margin-right: -30px;
-    padding: 13px;
-    border-radius: 100%;
-    position: relative;
-}
-.fa-heart {
-    color: #0065FC;
-    background: #DEEBFF;
-    margin-right: -30px;
-    padding: 13px;
-    border-radius: 60px;
-    position: relative;
-}   
-.fa-dog {
-    color: #0065FC;
-    background: #DEEBFF;
-    margin-right: -30px;
-    padding: 13px;
-    border-radius: 60px;
-    position: relative;
-}
+
 .info-logements {
     display: flex;
     align-items: center;
@@ -186,6 +167,7 @@ input::placeholder {
     border-radius: 50%;
    
 }
+
 #hebergements {
     display: flex;
     width: 100%;
@@ -376,7 +358,7 @@ input::placeholder {
     overflow: hidden;
 }
 .activity-title {
-    font-weight: 700;
+    font-weight: 800;
     margin-top: 10px;
 
 }
@@ -391,21 +373,229 @@ input::placeholder {
 }
 .footer-container {
     display: flex;
-    padding: 8vh;
     justify-content: space-between;
+    padding: 2rem;
     line-height: 3rem;
-    width: 70%;
+    width: auto
 }
 
 .par-footer {
-    font-weight: 700;
+    font-size: 1.2em;
+    font-weight: 800;
 }
 .footer-li {
     line-height: 2rem;
+    font-weight: 500;
+}
+
+/* Small phones (-480px)*/
+@media all and (min-width: 0px) and (max-width: 480px) {
+
+    .body-content {
+        padding: 0;
+    }
+    .logo-li {
+        display: block;
+        margin: 0;
+    }
+
+    .logo {
+        margin-left: 50px;
+    }
+    .ul-container-navbar {
+    display: flex;
+    width: 100%;
+    padding-bottom: 1rem;
+    margin-top: 2rem;
+    }
+
+    .li-container { 
+        width: 100%;
+        padding: 0;
+        border-bottom: 2px solid #F2F2F2;
+        padding-bottom: 8px;
+    }
+    .li-container:hover {
+        border-top: none;
+        border-bottom: #0065FC 2px solid;
+    }
+
+    .container-register {
+        position: absolute;
+        margin-right: 70px;
+        top: 0;
+        right: 0px;
+    }
+    .main-title { 
+        margin-left: 1rem;
+        margin-top: 1rem;
+    }
+
+    .par-description {
+        margin-left: 1rem;
+    }
+
+    .search-bar {
+        display: flex;
+        width: auto;
+        margin-left: 1rem;
+    }
+
+    input::placeholder {
+        font-size: 1em;
+    }
+    .search-small {
+        display: block;
+        padding: 12px;
+        background-color: #0065FC;
+        border-radius: 12px 12px 12px 12px;
+        margin-left: -10px;
+        cursor: pointer;
+      }
+    
+    .fa-search {
+        color: white;
+      }
+
+    .search-field {
+        border: solid 0.5px #cecece;
+        width: auto;
+    }
+
+    .search-button{
+        display: none;
+    }
+    .filters-bar {
+        margin-left: 1rem;
+        
+    }
+    .filter-title {
+        font-size: 1em;
+        margin: 0;
+        margin-right: 20px;
+    }
+    .filter-container {
+        margin: 0;
+        margin-bottom: 15px;
+    }
+
+    .btn-filter {
+       
+        border: 1px solid #cecece;
+        margin-right: 30px;
+    }
+    .btn-title {
+        font-size: 1.1em;
+    }
+    .info-logements {
+        margin-left: 1.5rem;
+    }
+    .article-aside-container {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .hebergements-container {
+        flex-direction: column;
+        margin-bottom: 2rem;
+        width: 100%;
+        background-color:white;
+        padding: 1rem;
+    }
+
+    #hebergements {
+        font-size: 1.5em;
+        width: auto;
+        padding: 1rem;
+        margin-bottom: 1rem;
+    }
+    .card-container {
+        
+    }
+    .card-container:hover {
+       -webkit-transform: none;
+       -moz-animation: none;
+
+    }
+    .more-title {
+        font-size: 1.3em;
+        font-weight: 800;
+        padding: 0px;
+        width: auto;
+        margin-left: 1rem;
+        margin-bottom: 1rem;
+        margin-top: 1rem;
+    }
+
+    .picture-content {
+        width: auto;
+    }
+
+    .aside-container {
+        width: 100%;
+        border-radius: 0px;
+        padding: 1.5rem;
+    }
+    .title-icon {
+        padding: 0px;  
+        margin-bottom: 1rem;  
+        margin-top: 1rem;
+    }
+
+    .title-aside {
+        margin-bottom: 1rem;
+        font-size: 1.5em;
+        
+    }
+
+    .card-mostpopular {
+        display: flex;
+        flex-wrap: nowrap;
+        width: auto;
+    }
+    .card-mostpopular:hover {
+        -webkit-transform: none;
+        -moz-animation: none;
+    }
+    .img-aside {
+      
+    }
+    #title-section {
+        margin-left: 2rem;
+        margin-bottom: 2rem;
+        font-size: 1.5em;
+        margin-top: 0px;
+    }
+
+    .grid-container {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        padding: 1rem;
+    }
+    .gridItem1:hover, .gridItem2:hover, .gridItem3:hover, .gridItem4:hover, .gridItem5:hover, .gridItem6:hover {
+        -webkit-transform: none;
+        -moz-animation: none;
+    }
+
+    .article-activities {
+        height: 250px;
+        margin-right: 1rem;
+    }
+    .activity-title {
+        font-size: 1.2em;
+    }
+    .footer-container {
+        display: block;
+        width: auto;
+    
+    }
+    .footer-sections {
+        margin-bottom: 1rem;
+    }
 }
 
 /* Small devices (landscape phones, 576px and up)*/
-@media all and (min-width: 576px) and (max-width: 767px) {
+@media all and (min-width: 481px) and (max-width: 767px) {
 
     .body-content {
         padding: 0;
@@ -491,20 +681,20 @@ input::placeholder {
     .filter-title {
         font-size: 1em;
         margin: 0;
-        margin-right: 10px;
+        margin-right: 20px;
     }
     .filter-container {
-        flex-wrap: nowrap;
-        margin-bottom: 20px;
+        margin: 0;
+        margin-bottom: 15px;
     }
 
     .btn-filter {
-        display: flex;
+       
         border: 1px solid #cecece;
-        margin-right: 11px;
+        margin-right: 30px;
     }
     .btn-title {
-        font-size: 0.9em;
+        font-size: 1.1em;
     }
     .info-logements {
         margin-left: 1.5rem;
@@ -841,4 +1031,17 @@ input::placeholder {
 /* Extra large devices (large desktops, 1200px and up)*/
 @media (min-width: 1200px) {
 
+    .aside-container {
+        flex-basis: 5%
+    }
+
+    .aside-card-content {
+        justify-content: space-around;
+        padding: 0;
+        margin-top: 1rem;
+        margin-left: 1rem;
+    }
+ 
+
 }
+
