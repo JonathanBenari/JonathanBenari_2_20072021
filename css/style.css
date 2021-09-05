@@ -186,7 +186,7 @@ input::placeholder {
     justify-content: space-evenly;
     background-color: #F2F2F2;
     border-radius: 15px;
-    margin-right: 40px;
+    margin-right: 35px;
 
 }
 .card-container {
@@ -512,7 +512,7 @@ input::placeholder {
         margin-bottom: 2rem;
         width: 100%;
         background-color:white;
-        padding: 1rem;
+        padding: 1.5rem;
     }
 
     #hebergements {
@@ -549,6 +549,7 @@ input::placeholder {
         flex-direction: column  ;
         border-radius: 0px;
         width: 395px;
+        padding: 1.5rem;
     }
     .title-icon {
         margin-top: 1rem;
@@ -600,6 +601,7 @@ input::placeholder {
         height: auto;
         column-gap: 0;
         row-gap: 0;
+        padding: 1rem;
     }
     .gridItem1:hover, .gridItem2:hover, .gridItem3:hover, .gridItem4:hover, .gridItem5:hover, .gridItem6:hover {
         -webkit-transform: none;
