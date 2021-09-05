@@ -401,16 +401,18 @@ input::placeholder {
     .logo-li {
         display: block;
         margin: 0;
+        width: 396px;
     }
 
     .logo {
         margin-left: 50px;
     }
+    .menu {
+        display: block;
+    }
     .ul-container-navbar {
-    display: flex;
-    width: 100%;
-    padding-bottom: 1rem;
-    margin-top: 2rem;
+        padding-bottom: 1rem;
+        margin-top: 2rem;
     }
 
     .li-container { 
@@ -425,9 +427,9 @@ input::placeholder {
     }
 
     .container-register {
-        position: absolute;
-        top: 0;
-        right: 0px;
+        position: relative;
+        top: -100px;
+        right: -250px;
         font-weight: 700;
     }
     .main-title { 
@@ -551,16 +553,12 @@ input::placeholder {
     }
 
     .aside-container {
-        display: flex;
-        flex-wrap: nowrap;
-        flex-direction: column  ;
         border-radius: 0px;
         width: 395px;
         padding: 1.5rem;
     }
     .title-icon {
         margin-top: 1rem;
-        width: 355px;
     }
 
     .title-aside {
